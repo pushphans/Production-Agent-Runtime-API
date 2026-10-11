@@ -1,0 +1,73 @@
+# Local configuration and credentials
+.env
+.env.*
+!.env.example
+*.env
+.envrc
+.direnv/
+.secrets/
+secrets/
+credentials*.json
+service-account*.json
+*.pem
+*.key
+*.p12
+*.pfx
+*.jks
+*.keystore
+.pgpass
+
+# Python environments and generated artifacts
+.venv/
+venv/
+env/
+ENV/
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.eggs/
+build/
+dist/
+pip-wheel-metadata/
+
+# Test, coverage, and type-checker caches
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.hypothesis/
+.tox/
+.nox/
+.coverage
+.coverage.*
+htmlcov/
+coverage.xml
+
+# Logs, local databases, and backups
+*.log
+logs/
+*.sqlite
+*.sqlite3
+*.db
+*.dump
+*.backup
+*.bak
+*.sql.gz
+
+# Editor and operating-system clutter
+.idea/
+.vscode/
+*.swp
+*.swo
+*.tmp
+*~
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Local agent settings and planning artifacts
+.claude/
+.opencode/
+project_1.md
+project_db_schema.excalidraw
+alembic/README

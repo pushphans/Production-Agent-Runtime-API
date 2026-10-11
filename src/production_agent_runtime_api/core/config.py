@@ -1,0 +1,21 @@
+from pydantic_settings import BaseSettings, SettingsConfigDict
+
+
+class Settings(BaseSettings):
+    DATABASE_URL : str
+    JWT_SECRET_KEY : str
+    ACCESS_TOKEN_EXPIRY_IN_MINUTES : int
+    REFRESH_TOKEN_EXPIRY_IN_DAYS : int
+    ALGORITHM : str
+    GROQ_API_KEY : str
+
+
+    model_config = SettingsConfigDict(
+        env_file=".env",
+        env_file_encoding="utf-8",
+        extra="ignore",
+        case_sensitive=True
+    )
+
+
+settings = Settings()
